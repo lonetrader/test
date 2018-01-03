@@ -1,0 +1,213 @@
+<!-- Html5 syntax -->
+<!DOCTYPE html>
+<!-- Standard language lang="en-US" -->
+<html lang="en-US">
+<head>
+	<!-- This is to define the standard encoding of characters -->
+	<meta charset="UTF-8" />
+	<!-- Links to support initial zooming and responsiveness on the webpage -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Programming the web 7th sem</title>
+	<!-- These are the links which lets you use bootstrap in your webpage -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<!-- using font awesome for better font and icons -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<!-- using custom animation by daneden animated.css library -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  	<!-- Linking the css file here -->
+  	<link rel="stylesheet" href="unit3.css">
+</head>
+<body>
+<!-- navigation bar using bootstrap -->
+<nav class="navbar navbar-inverse">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+				<span class="icon-bar"> </span>
+				<span class="icon-bar"> </span>
+				<span class="icon-bar"> </span>
+			</button>
+			<a href="index.html" class="navbar-brand"><img src="home.png" class="img-responsive" alt="" width="100" height="100" /></a>
+		</div>
+		<div class="collapse navbar-collapse" id="nav">
+			<ul class="nav navbar-nav">
+				<li><a href="">Unit 1</a></li>
+				<li><a href="">Unit 2</a></li>
+				<li class="active"><a href="">Unit 3</a></li>
+				<li><a href="">Unit 4</a></li>
+				<li><a href="">Unit 5</a></li>
+				<li><a href="">Unit 6</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- First background -->
+	<div class="jumbotron text-center" style="font-size: 55px; background-color: red; color: white;">
+			<i>Unit 3 <br>
+			CASCADING STYLE SHEETS (CSS)</i>
+	</div>
+<!-- Second Jumbotron -->
+	<div class="jumbotron container">
+		<h1 class="text-center"> What is Css ?</h1>
+		<p> XHTML style sheets are called cascading style sheets because they can be defined at three different levels to specify the style of a document. Lower level style sheets can override higher level style sheets, so the style of the content of a tag is determined, in effect, through a cascade of style-sheet applications.</p>
+  
+		<h1 class="text-center">Types of Css ?</h1>
+		<div class="row text-center">
+			<div class="col-sm-12">
+				<h3>External css</h3>
+				<p>External css can be used inside the head tag using the link tag which will link your css file as shown in the example below.</p>
+				<img src="1.png">
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-sm-12">
+				<h3>Internal css</h3>
+				<p>Internal css can be used inside the head tag using the style tag as shown in the example below.</p>
+				<img src="2.png">
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-sm-12">
+				<h3>Inline css</h3>
+				<p>Inline css can be used inside head tag using the link tag as shown in the example below.</p>
+				<img src="3.png">
+			</div>
+		</div>
+		<hr>
+		<h2 class="text-center">~~~~~  Topics in Css  ~~~~~~</h2>
+		<div class="row">
+			<div class="col-sm-12">
+					<h3>#selectors</h3>
+					<p>In case of simple selector, a tag is used. If the properties of the tag are changed, then it reflects at all the places when used in the program. The selector can be any tag. If the new properties for a tag are not mentioned within the rule list, then the browser uses default behaviour of a tag.</p>
+				<p>Some examples of selectors</p>
+				<ul>
+					<li>.class{ }</li>
+					<li>body{ }</li>
+					<li>p {}</li>
+					<li>h1 {}</li>
+					<li>p.one</li>
+					<li>h1.one</li>
+					<li>#id</li>
+				</ul>
+				<img src="4.png">
+				<h3>#Universal Selector</h3>
+				<p>The universal selector, denoted by an asterisk (*), applies its style to all elements in a document.</p>
+				<img src="5.png>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>#Font Families</h3>
+				<ul>
+					<li>#font-size: 10px;</li>
+					<li>#font-family: "times new roman";</li>
+					<li>#font-size: 10pt;</li>
+					<li>#font-style: italic</li>
+					<li>#font-weight: bold</li>
+					<li></li>
+				</ul>
+				<img src="6.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>#Font Shorthands</h3>
+				<p>If more than one font property must be specified, the values can be stated in a list as the value of the font property. The order in which the property values are given in a font value list is important. The order must be as follows: The font names must be last, the font size must be second to last, and the font style, font variant, and font weight, when they are included, can be in any order but must precede the font size and font names</p>
+				<ul>
+					<li>font: bold 14pt ‘Times New Roman';</li>
+				</ul>
+				<img src="7.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>#Text Decoration:</h3>
+				<p>The text-decoration property is used to specify some special features of text. The available values are line-through, overline, underline, and none, which is the default.</p>
+				<ul>
+					<li>text-decoration:line-through;</li>
+					<li>text-decoration:overline;</li>
+					<li>text-decoration:underline;</li>
+				</ul>
+				<img src="8.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>#LIST PROPERTIES</h3>
+				<p>The text-decoration property is used to specify some special features of text. The available values are line-through, overline, underline, and none, which is the default.</p>
+				<ul>
+					<li>li.one {list-style-type:disc}</li>
+					<li>li.two{list-style-type:square}</li>
+					<li>li.three{list-style-type:circle}</li>
+				</ul>
+				<br><br>
+				<img src="9.png">
+				<h3>#li with image.</h3>
+				<img src="10.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>#Color Properties</h3>
+				<p>The color property is used to specify the foreground color of XHTML elements</p>
+				<ul>
+					<li>color: pink; </li>
+					<li>color: # 9900FF; </li>
+					<li>background-color:#99FF00;</li>
+				</ul>
+				<br><br>
+				<img src="11.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>#Box model</h3>
+				<p>On a given web page or a document, all the elements can have borders.The borders have various styles, color and width.The amount of space between the content of the element and its border is known as padding.The space between border and adjacent element is known as margin.</p>
+				<br><br>
+				<h3>#Types of styling a border can have as given below.</h3>
+				<img src="12.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>#Background Image</h3>
+				<p>The background-image property is used to place an image in the background of an element.</p>
+				<img src="13.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>#THE span AND div TAGS</h3>
+				<p>In many situations, we want to apply special font properties to less than a whole paragraph of text. The span tag is designed for just this purpose.</p>
+				<h3>-Span tag</h3>
+				<img src="14.png">
+				<h3>#-Div tag</h3>
+				<img src="15.png" alt="">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>#ALIGNMENT OF TEXT</h3>
+				<ul>
+					<li>The text-indent property can be used to indent the first line of a paragraph. This property takes either a length or a percentage value. The text-align property, for which the possible keyword values are left, center, right, and justify, is used to arrange text horizontally.</li>
+  					<li>The float property is used to specify that text should flow around some element, often an image or a table. The possible values for float are left, right, and none, which is the default.</li>
+				</ul>
+				<ul>
+					<li>text-align: center/left/right</li>
+					<li>float: left/right</li>
+				</ul>
+			</div>
+		</div>
+		
+		<h2>Unit 3 Finished :)</h2>
+  
+	</div>
+
+
+
+
+
+</body>
+</html>
